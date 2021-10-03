@@ -20,8 +20,8 @@ steps:
   inputs:
     scriptSource: 'inline'
     script: |
-      python -m venv antenv
-               source antenv/bin/activate
+      py -3 -m venv .env
+               .env\scripts\activate
                python -m pip install --upgrade pip
                pip install setup
                pip install -r requirements.txt
